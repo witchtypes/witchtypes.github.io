@@ -5,6 +5,11 @@ html {
 body {
   font-size: 1.6rem;
   color: #000;
+  background-image: url('../images/waffle.gif');
+  background-attachment: fixed;
+  background-size: auto;
+  background-repeat: repeat;
+  backdrop-filter: brightness(125%);
 }
 
 header {
