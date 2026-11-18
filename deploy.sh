@@ -1,6 +1,6 @@
 #!/bin/bash
 stack build
-stack exec witchtypes rebuild
+stack exec site rebuild
 
 git fetch --all
 
