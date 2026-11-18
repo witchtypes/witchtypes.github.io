@@ -14,6 +14,9 @@ config = defaultConfiguration
 
 main :: IO ()
 main = hakyllWith config $ do
+    rev <- takeWhile (/= '\n') <$> readProcess "git" ["rev-parse", "--short", "HEAD"] ""
+    now <- getCurrentTime
+
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
