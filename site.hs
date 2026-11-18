@@ -16,6 +16,9 @@ main :: IO ()
 main = hakyllWith config $ do
     rev <- takeWhile (/= '\n') <$> readProcess "git" ["rev-parse", "--short", "HEAD"] ""
     now <- getCurrentTime
+    let siteCtx = constField "rev" rev
+             <> constField "built" (formatTime defaultTimeLocale "%Y-%m-%d" now)
+             <> defaultContext
 
     match "images/*" $ do
         route   idRoute
