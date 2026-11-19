@@ -18,11 +18,11 @@
   --title: "title";
 }
 
-html { font-size: 62.5%; }
+/*html { font-size: 62.5%; }*/
 
 body {
   font-family: var(--mono);
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   color: var(--fg);
   background: var(--bg);
@@ -47,7 +47,7 @@ nav { text-align: right; }
 
 .site, nav a {
   font-family: var(--mono);
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   color: var(--fg);
   text-decoration: none;
 }
@@ -62,8 +62,8 @@ footer {
 
 footer .in { padding-block: 1.2rem; text-align: right; }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 2rem; }
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.75rem; }
 h1, h2, h3 { color: var(--head); line-height: 1.3; }
 
 article .header {
