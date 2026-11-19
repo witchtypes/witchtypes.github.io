@@ -21,10 +21,6 @@
 /*html { font-size: 75%; }*/
 
 body {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  font-family: var(--mono);
   text-align: left;
   font-size: 1rem;
   line-height: 1.7;
