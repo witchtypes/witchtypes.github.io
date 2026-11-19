@@ -81,12 +81,12 @@ article .header {
 
 .posts { list-style: none; padding: 0; }
 .posts li { display: flex; flex-wrap: wrap; gap: 0 1.6rem; }
-.posts li:last-child { border-bottom: 0.1rem solid var(--line); }
+/*.posts li:last-child { border-bottom: 0.1rem solid var(--line); }*/
 .posts time { flex: 0 0 9rem; color: var(--muted); }
 .posts div { flex: 1 1 20rem; }
-.posts p { color: var(--muted); font-size: 1rem; text-align: right;}
+.posts p { color: var(--muted); font-size: 1rem; text-align: center;}
 
-a[rel=tag] { color: var(--tag); text-decoration: none; margin-left: 0.4rem; text-align: right;}
+a[rel=tag] { color: var(--tag); text-decoration: none; margin-left: 0.4rem; text-align: center;}
 a[rel=tag]::before { content: "["; }
 a[rel=tag]::after { content: "]"; }
 
