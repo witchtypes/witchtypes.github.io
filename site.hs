@@ -5,7 +5,7 @@ import           Hakyll
 import           Data.List           (intersperse)
 import           Data.Time           (defaultTimeLocale, formatTime, getCurrentTime)
 import           System.Process      (readProcess)
-import           Text.Pandoc.Options (HTMLMathMethod (MathML), WriterOptions (..), (KaTeX))
+import           Text.Pandoc.Options (HTMLMathMethod (KaTeX), WriterOptions (..))
 
 --------------------------------------------------------------------------------
 config :: Configuration
