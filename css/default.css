@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "IMFr";
-  src: url("../fonts/IMFeENrm29C.otf") format("opentype");
+  font-family: "title";
+  src: url("../fonts/Bitmgothic.otf") format("opentype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "OT";
-  src: url("../fonts/Oceanside\ Typewriter.ttf") format("opentype");
+  src: url("../fonts/SourceCodePro-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -14,15 +14,14 @@
 :root {
   --bg: #140a14;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #3a1f35;
   --accent: #ff5fa8;  --head: #ffb3d6;  --tag: #a69cff;  --code: #1d0f1d;
-  --mono: "3270", monospace;
-  --italic: "IMFi";
-  --regular: "OT";
+  --mono: "OT", monospace;
+  --title: "title";
 }
 
 html { font-size: 62.5%; }
 
 body {
-  font-family: var(--regular);
+  font-family: var(--mono);
   font-size: 1.6rem;
   line-height: 1.7;
   color: var(--fg);
@@ -73,6 +72,7 @@ article .header {
 }
 
 .logo a {
+  font-family: var(--title);
   color: var(--fg);
   text-decoration: none;
 }
