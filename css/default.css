@@ -12,7 +12,7 @@
 
 
 :root {
-  --bg: #140a14;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #2b1f3a;
+  --bg: #0b0a14;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #2b1f3a;
   --accent: #4033fa;  --head: #beb3ff;  --tag: #a69cff;  --code: #140f1d;
   --mono: "OT", monospace;
   --title: "title";
