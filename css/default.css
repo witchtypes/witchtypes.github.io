@@ -80,11 +80,11 @@ article .header {
 }
 
 .posts { list-style: none; padding: 0; }
-.posts li { display: flex; flex-wrap: wrap; gap: 0 1.6rem; padding: 0.8rem 0; border-top: 0.1rem solid var(--line); }
+.posts li { display: flex; flex-wrap: wrap; gap: 0 1.6rem; padding: 0.8rem 0; }
 .posts li:last-child { border-bottom: 0.1rem solid var(--line); }
 .posts time { flex: 0 0 9rem; color: var(--muted); }
 .posts div { flex: 1 1 20rem; }
-.posts p { margin: 0; color: var(--muted); font-size: 1rem; }
+.posts p { margin: 0; color: var(--muted); font-size: 1rem; text-align: right;}
 
 a[rel=tag] { color: var(--tag); text-decoration: none; margin-left: 0.4rem; }
 a[rel=tag]::before { content: "["; }
