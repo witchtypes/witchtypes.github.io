@@ -55,7 +55,7 @@ nav { text-align: right; }
 footer {
   margin-top: 3rem;
   padding: 1.2rem 0;
-  border-top: 0.2rem solid var(--line);
+  border-top: 0.2rem solid var(--head);
   font-size: 1.2rem;
   color: var(--head);
 }
