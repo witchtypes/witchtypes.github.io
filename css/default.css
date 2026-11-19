@@ -57,12 +57,12 @@ footer {
   padding: 1.2rem 0;
   border-top: 0.2rem solid var(--line);
   font-size: 1.2rem;
-  color: var(--muted);
+  color: var(--head);
 }
 
 footer .in { padding-block: 1.2rem; text-align: right; }
 
-h1 { font-size: 2.4rem; }
+h1 { font-size: 2rem; }
 h2 { font-size: 2rem; }
 h1, h2, h3 { color: var(--head); line-height: 1.3; }
 
