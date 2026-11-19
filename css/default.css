@@ -24,7 +24,7 @@ img { max-width: 100%; height: auto; }
 
 .in { width: 100%; max-width: 75rem; margin: 0 auto; padding-inline: 2rem; }
 
-header { border-bottom: 0.5rem solid var(--head); }
+header { border-bottom: 0.2rem solid var(--head); }
 header .in {
   display: flex;
   flex-wrap: wrap;
