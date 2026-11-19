@@ -18,7 +18,7 @@ mdCompiler :: Compiler (Item String)
 mdCompiler = pandocCompilerWith defaultHakyllReaderOptions
   defaultHakyllWriterOptions 
   {
-    writerHTMLMathMethod = MathML 
+    writerHTMLMathMethod = KaTeX 
   }
 
 postCtx :: Tags -> Context String
