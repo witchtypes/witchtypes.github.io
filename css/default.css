@@ -18,7 +18,7 @@
   --title: "title";
 }
 
-/*html { font-size: 62.5%; }*/
+html { font-size: 75%; }
 
 body {
   font-family: var(--mono);
@@ -83,7 +83,7 @@ article .header {
 .posts li:last-child { border-bottom: 0.1rem solid var(--line); }
 .posts time { flex: 0 0 9rem; color: var(--muted); }
 .posts div { flex: 1 1 20rem; }
-.posts p { margin: 0; color: var(--muted); font-size: 1.4rem; }
+.posts p { margin: 0; color: var(--muted); font-size: 1rem; }
 
 a[rel=tag] { color: var(--tag); text-decoration: none; margin-left: 0.4rem; }
 a[rel=tag]::before { content: "["; }
