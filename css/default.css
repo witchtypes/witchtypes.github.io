@@ -1,12 +1,14 @@
-@font-face{font-family:"3270";src:url("../fonts/3270-Regular.otf") format("otf");font-weight:400;font-display:swap}
+@font-face{font-family:"3270";src:url("../fonts/3270-Regular.otf") format("otf");}
 :root {
   --bg: #140a14;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #3a1f35;
   --accent: #ff5fa8;  --head: #ffb3d6;  --teal: #5eead4;  --code: #1d0f1d;
+  --mono: "3270", 
 }
 
 html { font-size: 62.5%; }
 
 body {
+  font-family: 3270;
   font-size: 1.6rem;
   line-height: 1.7;
   color: var(--fg);
