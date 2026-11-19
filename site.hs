@@ -21,11 +21,6 @@ mdCompiler = pandocCompilerWith defaultHakyllReaderOptions
     writerHTMLMathMethod = MathML 
   }
 
-readTimeField :: Context String
-readTimeField = field "readtime" $ \item -> do
-  body <- loadSnapshotBody (itemIdentifier item) "content"
-  return (show (max 1 (length (words body) `div` 220)) ++ " min")
-
 postCtx :: Tags -> Context String
 postCtx tags =
      dateField "date" "%Y-%m-%d"
@@ -38,7 +33,6 @@ main = do
     now <- getCurrentTime
     let siteCtx = constField "rev" rev
                 <> constField "built" (formatTime defaultTimeLocale "%Y-%m-%d" now)
-                <> readTimeField
                 <> defaultContext
 
     hakyllWith config $ do
