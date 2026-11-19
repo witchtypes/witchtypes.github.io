@@ -26,7 +26,15 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   color: var(--fg);
-  background: var(--bg);
+  background-color: #0a0a14;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px,   #ffffff, transparent),
+    radial-gradient(1px 1px at 90px 120px,  #99bbff, transparent),
+    radial-gradient(1px 1px at 150px 60px,  #ff99cc, transparent),
+    radial-gradient(1.5px 1.5px at 200px 180px, #ffffff, transparent),
+    radial-gradient(1px 1px at 60px 210px,  #7a7aff, transparent);
+  background-size: 220px 220px, 170px 170px, 250px 250px, 310px 310px, 190px 190px;
+  background-attachment: fixed; /* stars stay put when scrolling */
 }
 
 a { color: var(--accent);}
