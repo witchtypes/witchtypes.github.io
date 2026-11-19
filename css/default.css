@@ -22,14 +22,14 @@
 
 body {
   font-family: var(--mono);
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
   line-height: 1.7;
   color: var(--fg);
   background: var(--bg);
 }
 
-a { color: var(--accent); text-align: center;}
+a { color: var(--accent);}
 img { max-width: 100%; height: auto; }
 
 .in { width: 100%; max-width: 75rem; margin: 0 auto; padding-inline: 2rem; }
@@ -61,7 +61,7 @@ footer {
   color: var(--muted);
 }
 
-footer .in { padding-block: 1rem; text-align: right; }
+footer .in { padding-block: 1rem; text-align: center; }
 
 h1 { font-size: 1rem; }
 h2 { font-size: 1rem; }
@@ -84,9 +84,9 @@ article .header {
 /*.posts li:last-child { border-bottom: 0.1rem solid var(--line); }*/
 .posts time { flex: 0 0 9rem; color: var(--muted); }
 .posts div { flex: 1 1 20rem; }
-.posts p { color: var(--muted); font-size: 1rem; text-align: center;}
+.posts p { color: var(--muted); font-size: 1rem; text-align: left;}
 
-a[rel=tag] { color: var(--tag); text-decoration: none; margin-left: 0.4rem; text-align: center;}
+a[rel=tag] { color: var(--tag); text-decoration: none; margin-left: 0.4rem; text-align: left;}
 a[rel=tag]::before { content: "["; }
 a[rel=tag]::after { content: "]"; }
 
