@@ -64,7 +64,7 @@ footer .in { padding-block: 1rem; text-align: right; }
 
 h1 { font-size: 1rem; }
 h2 { font-size: 1rem; }
-h1, h2, h3 { color: var(--head);}
+h1, h2, h3 { color: var(--head); font-weight: normal; }
 
 article .header {
   font-size: 1rem;
