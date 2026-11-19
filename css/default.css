@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: "IMFi";
-  src: url("../fonts/IMFeENit29C.otf") format("opentype");
+  font-family: "OT";
+  src: url("../fonts/Oceanside\ Typewriter.ttf") format("opentype");
   font-display: swap;
 }
 
@@ -16,7 +16,7 @@
   --accent: #ff5fa8;  --head: #ffb3d6;  --tag: #a69cff;  --code: #1d0f1d;
   --mono: "3270", monospace;
   --italic: "IMFi";
-  --regular: "IMFr";
+  --regular: "OT";
 }
 
 html { font-size: 62.5%; }
