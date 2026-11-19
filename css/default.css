@@ -46,6 +46,7 @@ header .in {
 nav { text-align: right; }
 
 .site, nav a {
+  font-family: var(--title);
   font-size: 1.8rem;
   color: var(--fg);
   text-decoration: none;
