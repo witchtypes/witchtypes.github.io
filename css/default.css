@@ -29,7 +29,7 @@ body {
   background: var(--bg);
 }
 
-a { color: var(--accent);}
+a { color: var(--accent); text-align: center;}
 img { max-width: 100%; height: auto; }
 
 .in { width: 100%; max-width: 75rem; margin: 0 auto; padding-inline: 2rem; }
