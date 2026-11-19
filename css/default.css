@@ -61,7 +61,7 @@ nav a:hover { color: var(--accent); }
 
 main { grid-area: main; padding-block: 3rem; }
 
-h1 { font-size: 2.4rem; margin-top: 0; }
+h1 { font-size: 2rem; margin-top: 0; }
 h2 { font-size: 2rem; }
 h1, h2, h3 { color: var(--head); line-height: 1.3; }
 
@@ -100,3 +100,16 @@ code span.st, code span.ch { color: #ffd28a; }
 code span.dv, code span.bn, code span.fl { color: var(--tag); }
 code span.co { color: var(--muted); font-style: italic; }
 math[display=block] { display: block; overflow-x: auto; }
+
+
+.intro { display: grid; grid-template-columns: 17rem 1fr; border: 0.1rem solid var(--muted); margin-bottom: 3rem; }
+.intro .card { display: flex; flex-direction: column; align-items: center; gap: 0.4rem; padding: 1rem; border-right: 0.1rem solid var(--muted); text-align: center; font-size: 1.4rem; line-height: 1.4; }
+.intro .card img { width: 13rem; height: 13rem; object-fit: cover; }
+.intro .card small { color: var(--muted); font-size: 1.2rem; }
+.intro .text { padding: 1rem 1.6rem; }
+.intro .text p { margin: 0 0 1rem; }
+
+@media (max-width: 720px) {
+  .intro { grid-template-columns: 1fr; }
+  .intro .card { border-right: 0; border-bottom: 0.1rem solid var(--muted); }
+}
