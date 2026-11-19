@@ -74,9 +74,9 @@ main = do
                 posts <- recentFirst =<< loadAll "posts/*"
                 let ctx = listField "posts" (postCtx tags) (return posts) <> constField "title" "Writing" <> siteCtx
                 makeItem ""
-                >>= loadAndApplyTemplate "templates/archive.html" ctx
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
+                    >>= loadAndApplyTemplate "templates/archive.html" ctx
+                    >>= loadAndApplyTemplate "templates/default.html" ctx
+                    >>= relativizeUrls
 
 
         match "index.html" $ do
@@ -85,9 +85,9 @@ main = do
                 posts <- fmap (take 5) . recentFirst =<< loadAll "posts/*"
                 let ctx = listField "posts" (postCtx tags) (return posts) <> siteCtx
                 getResourceBody
-                >>= applyAsTemplate ctx
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
+                    >>= applyAsTemplate ctx
+                    >>= loadAndApplyTemplate "templates/default.html" ctx
+                    >>= relativizeUrls
 
 
 --------------------------------------------------------------------------------
