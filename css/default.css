@@ -16,12 +16,13 @@
   --accent: #ff5fa8;  --head: #ffb3d6;  --tag: #a69cff;  --code: #1d0f1d;
   --mono: "3270", monospace;
   --italic: "IMFi";
+  --regular: "IMFr";
 }
 
 html { font-size: 62.5%; }
 
 body {
-  font-family: var(--mono);
+  font-family: var(--regular);
   font-size: 1.6rem;
   line-height: 1.7;
   color: var(--fg);
