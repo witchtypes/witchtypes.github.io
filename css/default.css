@@ -22,7 +22,7 @@ body {
 a { color: var(--accent); }
 img { max-width: 100%; height: auto; }
 
-header { border-bottom: 0.4rem solid var(--accent); }
+header { border-top: 0.5rem solid var(--head); }
 
 nav { text-align: right; }
 

@@ -6,7 +6,7 @@ title: Research
 
 - **[Title]**, [Venue], [Year]. [[pdf](/files/paper.pdf)] [[code](https://example.com)]
 
-## Talks and posters
+## Talks
 
 - **[Title]**, [Event], [Year]. [[slides](/files/slides.pdf)]
 
