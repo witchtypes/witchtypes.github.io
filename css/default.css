@@ -12,7 +12,7 @@
 
 
 :root {
-  --bg: #0b0a14;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #2b1f3a;
+  --bg: #06060c;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #2b1f3a;
   --accent: #4033fa;  --head: #beb3ff;  --tag: #a69cff;  --code: #140f1d;
   --mono: "OT", monospace;
   --title: "title";
@@ -26,7 +26,7 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   color: var(--fg);
-  background-color: #0a0a14;
+  background: var(--bg);
 }
 
 a { color: var(--accent);}
