@@ -22,11 +22,22 @@ body {
 a { color: var(--accent); }
 img { max-width: 100%; height: auto; }
 
+.in { width: 100%; max-width: 60rem; margin: 0 auto; padding-inline: 2rem; }
+
 header { border-top: 0.5rem solid var(--head); }
+header .in {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.8rem 2rem;
+  padding-block: 1.4rem;
+}
 
 nav { text-align: right; }
 
-nav a {
+
+.site, nav a {
   font-size: 1.8rem;
   font-weight: bold;
   color: var(--fg);
@@ -40,6 +51,8 @@ footer {
   font-size: 1.2rem;
   color: var(--muted);
 }
+
+footer .in { padding-block: 1.2rem; text-align: right; }
 
 h1 { font-size: 2.4rem; }
 h2 { font-size: 2rem; }
