@@ -139,3 +139,23 @@ article .header {
     font-size: 1.8rem;
   }
 }
+
+.posts { list-style: none; padding: 0; }
+.posts li { display: flex; flex-wrap: wrap; gap: 0 1.6rem; padding: 0.8rem 0; border-top: 0.1rem solid var(--line); }
+.posts li:last-child { border-bottom: 0.1rem solid var(--line); }
+.posts time { flex: 0 0 9rem; color: var(--muted); }
+.posts div { flex: 1 1 20rem; }
+.posts p { margin: 0; color: var(--muted); font-size: 1.4rem; }
+
+a[rel=tag] { color: var(--teal); text-decoration: none; margin-left: 0.4rem; }
+a[rel=tag]::before { content: "["; }
+a[rel=tag]::after { content: "]"; }
+
+pre { background: var(--code); border: 0.1rem solid var(--line); padding: 1.6rem; overflow: auto; }
+:not(pre) > code { background: var(--code); padding: 0 0.4rem; }
+code span.kw, code span.cf { color: var(--accent); }
+code span.dt, code span.fu { color: var(--teal); }
+code span.st, code span.ch { color: #ffd28a; }
+code span.dv, code span.bn, code span.fl { color: #7dd3fc; }
+code span.co { color: var(--muted); font-style: italic; }
+math[display=block] { display: block; overflow-x: auto; }
