@@ -40,7 +40,7 @@ a { color: var(--accent); }
 img { max-width: 100%; height: auto; }
 
 /* centred reading column inside the right-hand area */
-.in { width: 100%; max-width: 60rem; margin: 0 auto; padding-inline: 2rem; }
+.in { width: 100%; max-width: 100rem; margin: 0 auto; padding-inline: 3rem; }
 
 /* sidebar */
 header {
@@ -60,6 +60,7 @@ nav a { font-size: 1.8rem; color: var(--fg); text-decoration: none; }
 nav a:hover { color: var(--accent); }
 
 main { grid-area: main; padding-block: 3rem; }
+main p, main li { max-width: 80ch; }
 
 h1 { font-size: 2rem; margin-top: 0; }
 h2 { font-size: 2rem; }
@@ -84,7 +85,7 @@ footer .in { padding-block: 1.2rem; text-align: right; }
 .posts { list-style: none; padding: 0; }
 .posts li { display: flex; flex-wrap: wrap; gap: 0 1.6rem; }
 /*.posts li:last-child { border-bottom: 0.1rem solid var(--line); }*/
-.posts time { flex: 0 0 9rem; color: var(--muted); }
+.posts time { flex: 0 0 11ch; white-space: nowrap; color: var(--muted); }
 .posts div { flex: 1 1 20rem; }
 .posts p { color: var(--muted); font-size: 1rem; text-align: left;}
 
