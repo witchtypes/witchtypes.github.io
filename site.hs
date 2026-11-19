@@ -72,7 +72,7 @@ main = do
             route idRoute
             compile $ do
                 posts <- recentFirst =<< loadAll "posts/*"
-                let ctx = listField "posts" (postCtx tags) (return posts) <> constField "title" "Writing" <> siteCtx
+                let ctx = listField "posts" (postCtx tags) (return posts) <> constField "title" "Posts" <> siteCtx
                 makeItem ""
                     >>= loadAndApplyTemplate "templates/archive.html" ctx
                     >>= loadAndApplyTemplate "templates/default.html" ctx
