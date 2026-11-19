@@ -2,7 +2,7 @@
 title: bleeeeeeeeeeeeeeeeeeh
 date: 2026-11-12
 description: testtestestestest
-tags: technical, maths
+tags: maths
 ---
 Inline maths like $f \circ g$, and display maths:
 
