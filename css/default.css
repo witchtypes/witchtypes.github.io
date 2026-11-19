@@ -12,8 +12,8 @@
 
 
 :root {
-  --bg: #140a14;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #3a1f35;
-  --accent: #ff5fa8;  --head: #ffb3d6;  --tag: #a69cff;  --code: #1d0f1d;
+  --bg: #140a14;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #2b1f3a;
+  --accent: #4033fa;  --head: #beb3ff;  --tag: #a69cff;  --code: #140f1d;
   --mono: "OT", monospace;
   --title: "title";
 }
