@@ -5,7 +5,7 @@
 }
 :root {
   --bg: #140a14;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #3a1f35;
-  --accent: #ff5fa8;  --head: #ffb3d6;  --teal: #5eead4;  --code: #1d0f1d;
+  --accent: #ff5fa8;  --head: #ffb3d6;  --tag: #8a7efd;  --code: #1d0f1d;
   --mono: "3270", monospace;
 }
 
@@ -153,15 +153,15 @@ article .header {
 .posts div { flex: 1 1 20rem; }
 .posts p { margin: 0; color: var(--muted); font-size: 1.4rem; }
 
-a[rel=tag] { color: var(--teal); text-decoration: none; margin-left: 0.4rem; }
+a[rel=tag] { color: var(--tag); text-decoration: none; margin-left: 0.4rem; }
 a[rel=tag]::before { content: "["; }
 a[rel=tag]::after { content: "]"; }
 
 pre { background: var(--code); border: 0.1rem solid var(--line); padding: 1.6rem; overflow: auto; }
 :not(pre) > code { background: var(--code); padding: 0 0.4rem; }
 code span.kw, code span.cf { color: var(--accent); }
-code span.dt, code span.fu { color: var(--teal); }
+code span.dt, code span.fu { color: var(--tag); }
 code span.st, code span.ch { color: #ffd28a; }
-code span.dv, code span.bn, code span.fl { color: #7dd3fc; }
+code span.dv, code span.bn, code span.fl { color: var(--tag); }
 code span.co { color: var(--muted); font-style: italic; }
 math[display=block] { display: block; overflow-x: auto; }
