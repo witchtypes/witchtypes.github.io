@@ -59,37 +59,37 @@ main = do
                 >>= relativizeUrls
 
         tagsRules tags $ \tag pat -> do
-        let ctx = constField "title" tag
-                <> listField "posts" (postCtx tags) (recentFirst =<< loadAll pat)
-                <> siteCtx
-        route idRoute
-        compile $ makeItem ""
-            >>= loadAndApplyTemplate "templates/archive.html" ctx
-            >>= loadAndApplyTemplate "templates/default.html" ctx
-            >>= relativizeUrls
+            let ctx = constField "title" tag
+                    <> listField "posts" (postCtx tags) (recentFirst =<< loadAll pat)
+                    <> siteCtx
+            route idRoute
+            compile $ makeItem ""
+                >>= loadAndApplyTemplate "templates/archive.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
 
         create ["archive.html"] $ do
-        route idRoute
-        compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let ctx = listField "posts" (postCtx tags) (return posts)
-                <> constField "title" "Writing"
-                <> siteCtx
-            makeItem ""
-            >>= loadAndApplyTemplate "templates/archive.html" ctx
-            >>= loadAndApplyTemplate "templates/default.html" ctx
-            >>= relativizeUrls
+            route idRoute
+            compile $ do
+                posts <- recentFirst =<< loadAll "posts/*"
+                let ctx = listField "posts" (postCtx tags) (return posts)
+                    <> constField "title" "Writing"
+                    <> siteCtx
+                makeItem ""
+                >>= loadAndApplyTemplate "templates/archive.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
 
 
         match "index.html" $ do
-        route idRoute
-        compile $ do
-            posts <- fmap (take 5) . recentFirst =<< loadAll "posts/*"
-            let ctx = listField "posts" (postCtx tags) (return posts) <> siteCtx
-            getResourceBody
-            >>= applyAsTemplate ctx
-            >>= loadAndApplyTemplate "templates/default.html" ctx
-            >>= relativizeUrls
+            route idRoute
+            compile $ do
+                posts <- fmap (take 5) . recentFirst =<< loadAll "posts/*"
+                let ctx = listField "posts" (postCtx tags) (return posts) <> siteCtx
+                getResourceBody
+                >>= applyAsTemplate ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
 
 
 --------------------------------------------------------------------------------
