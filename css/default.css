@@ -22,7 +22,7 @@
 
 body {
   font-family: var(--mono);
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.7;
   color: var(--fg);
   background: var(--bg);
@@ -47,27 +47,27 @@ nav { text-align: right; }
 
 .site, nav a {
   font-family: var(--mono);
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--fg);
   text-decoration: none;
 }
 
 footer {
   margin-top: 3rem;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   border-top: 0.2rem solid var(--head);
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--head);
 }
 
 footer .in { padding-block: 1.2rem; text-align: right; }
 
-h1 { font-size: 1.5rem; }
-h2 { font-size: 1.5rem; }
+h1 { font-size: 1rem; }
+h2 { font-size: 1rem; }
 h1, h2, h3 { color: var(--head); line-height: 1.3; }
 
 article .header {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-style: italic;
   color: var(--muted);
 }
