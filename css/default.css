@@ -55,9 +55,9 @@ nav { text-align: right; }
 footer {
   margin-top: 3rem;
   padding: 1rem 0;
-  border-top: 0.2rem solid var(--head);
+  border-top: 0.1rem solid var(--head);
   font-size: 1rem;
-  color: var(--head);
+  color: var(--muted);
 }
 
 footer .in { padding-block: 1.2rem; text-align: right; }
