@@ -1,12 +1,21 @@
 @font-face {
-  font-family: "3270";
-  src: url("../fonts/CyberpunkWaifus.ttf") format("truetype");
+  font-family: "IMFr";
+  src: url("../fonts/IMFeENrm29C.otf") format("opentype");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "IMFi";
+  src: url("../fonts/IMFeENit29C.otf") format("opentype");
+  font-display: swap;
+}
+
+
 :root {
   --bg: #140a14;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #3a1f35;
   --accent: #ff5fa8;  --head: #ffb3d6;  --tag: #a69cff;  --code: #1d0f1d;
   --mono: "3270", monospace;
+  --italic: "IMFi";
 }
 
 html { font-size: 62.5%; }
