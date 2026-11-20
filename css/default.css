@@ -42,7 +42,7 @@ body::before {
   inset: 0 0 0 var(--side); 
   z-index: -1;
   background:
-    linear-gradient(rgba(20, 10, 20, 0.85), rgba(20, 10, 20, 0.85)), 
+    linear-gradient(rgba(20, 10, 20, 0.910), rgba(20, 10, 20, 0.910)), 
     url("../images/aut.jpg") center / cover;
 }
 
