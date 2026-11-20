@@ -36,6 +36,16 @@ body {
   background: var(--bg);
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 0 var(--side); 
+  z-index: -1;
+  background:
+    linear-gradient(rgba(20, 10, 20, 0.85), rgba(20, 10, 20, 0.85)), 
+    url("../images/forest.jpg") center / cover;
+}
+
 a { color: var(--accent); }
 img { max-width: 100%; height: auto; }
 
