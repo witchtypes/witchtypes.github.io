@@ -43,7 +43,7 @@ body::before {
   z-index: -1;
   background:
     linear-gradient(rgba(20, 10, 20, 0.85), rgba(20, 10, 20, 0.85)), 
-    url("../images/a1.webp") center / cover;
+    url("../images/bamb.jpg") center / cover;
 }
 
 a { color: var(--accent); }
