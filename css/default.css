@@ -49,10 +49,8 @@ header {
   top: 0;
   align-self: start;
   height: 100dvh;
-  overflow-y: auto;
   padding: 2.4rem 2rem;
-  background: var(--bar);
-  border-right: 0.4rem solid var(--head);
+  background: #1c1c2e;
 }
 .site { display: block; font-size: 2.4rem; font-weight: bold; color: var(--fg); text-decoration: none; }
 nav { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 3rem; }
@@ -70,17 +68,6 @@ article .header { font-size: 1.4rem; font-style: italic; color: var(--muted); }
 
 footer { grid-area: foot; border-top: 0.2rem solid var(--line); font-size: 1.2rem; color: var(--muted); text-align: right; }
 footer .in { padding-block: 1.2rem; }
-
-/* small screens: sidebar becomes a top bar */
-@media (max-width: 720px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "side" "main" "foot";
-  }
-  header { position: static; height: auto; border-right: 0; border-bottom: 0.4rem solid var(--head); }
-  nav { flex-direction: row; flex-wrap: wrap; gap: 0.4rem 1.6rem; margin-top: 1rem; }
-}
 
 .posts { list-style: none; padding: 0; }
 .posts li { display: flex; flex-wrap: wrap; gap: 0 1.6rem; }
@@ -109,8 +96,3 @@ math[display=block] { display: block; overflow-x: auto; }
 .intro .card small { color: var(--muted); font-size: 1.2rem; }
 .intro .text { padding: 1rem 1.6rem; }
 .intro .text p { margin: 0 0 1rem; }
-
-@media (max-width: 720px) {
-  .intro { grid-template-columns: 1fr; }
-  .intro .card { border-right: 0; border-bottom: 0.1rem solid var(--muted); }
-}
