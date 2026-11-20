@@ -42,7 +42,7 @@ body::before {
   inset: 0 0 0 var(--side); 
   z-index: -1;
   background:
-    linear-gradient(#140a14e8, rgba(20, 10, 20, 0.910)), 
+    linear-gradient(#140a0de8, #140a0de8), 
     url("../images/red.jpg") center / cover;
 }
 
