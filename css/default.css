@@ -12,7 +12,7 @@
 
 
 :root {
-  --bg: #06060c;  --fg: #f1e4ee;  --muted: #b393a9;  --line: #1f3a2b;
+  --bg: #06060c;  --fg: #f1e4ee;  --muted: #93b39e;  --line: #1f3a2b;
   --accent: #278a27;  --head: #f1e4ee;  --tag: #9cffb1;  --code: #0f1d11;
   --mono: "OT", monospace;
   --title: "title";
@@ -62,7 +62,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 2.4rem 2rem;
-  background: #1c1c2e;
+  background: #1c2e1c;
 }
 .build { margin-top: auto; font-size: 1.2rem; line-height: 1.5; color: var(--muted); }
 .site { display: block; font-size: 2.4rem; font-weight: bold; color: var(--fg); text-decoration: none; }
