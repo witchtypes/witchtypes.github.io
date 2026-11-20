@@ -12,8 +12,8 @@
 
 
 :root {
-  --bg: #06060c;  --fg: #f1e4ee;  --muted: #93b39e;  --line: #1f3a2b;
-  --accent: #278a27;  --head: #f1e4ee;  --tag: #9cffb1;  --code: #0f1d11;
+  --bg: #06060c;  --fg: #f1e4ee;  --muted: #b3a693;  --line: #3a2f1f;
+  --accent: #8d4c20;  --head: #f1e4ee;  --tag: #e49e35;  --code: #1d160f;
   --mono: "OT", monospace;
   --title: "title";
    --side: 24rem;
@@ -43,7 +43,7 @@ body::before {
   z-index: -1;
   background:
     linear-gradient(rgba(20, 10, 20, 0.85), rgba(20, 10, 20, 0.85)), 
-    url("../images/bamb.jpg") center / cover;
+    url("../images/aut.jpg") center / cover;
 }
 
 a { color: var(--accent); }
@@ -62,7 +62,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 2.4rem 2rem;
-  background: #1c2e1c;
+  background: #2e221c;
 }
 .build { margin-top: auto; font-size: 1.2rem; line-height: 1.5; color: var(--muted); }
 .site { display: block; font-size: 2.4rem; font-weight: bold; color: var(--fg); text-decoration: none; }
