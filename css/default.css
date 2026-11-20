@@ -52,6 +52,7 @@ header {
   padding: 2.4rem 2rem;
   background: #1c1c2e;
 }
+.build { margin-top: auto; font-size: 1.2rem; line-height: 1.5; color: var(--muted); }
 .site { display: block; font-size: 2.4rem; font-weight: bold; color: var(--fg); text-decoration: none; }
 nav { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 3rem; }
 nav a { font-size: 1.8rem; color: var(--fg); text-decoration: none; }
