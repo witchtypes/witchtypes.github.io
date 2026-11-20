@@ -13,7 +13,7 @@
 
 :root {
   --bg: #06060c;  --fg: #f1e4ee;  --muted: #b3a693;  --line: #3a1f2c;
-  --accent: #b656ee;  --head: #f1e4ee;  --tag: #ff71a0;  --code: #1d0f17;
+  --accent: #a456ee;  --head: #f1e4ee;  --tag: #ff71a0;  --code: #1d0f17;
   --mono: "OT", monospace;
   --title: "title";
    --side: 24rem;
@@ -65,7 +65,7 @@ header {
   background: #000000de;
 }
 .build { margin-top: auto; font-size: 1.2rem; line-height: 1.5; color: var(--muted); }
-.site { display: block; font-size: 2.4rem; font-weight: bold; color: var(--fg); text-decoration: none; }
+.site { display: block; font-size: 2.4rem; font-weight: normal ; color: var(--fg); text-decoration: none; }
 nav { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 3rem; }
 nav a { font-size: 1.8rem; color: var(--fg); text-decoration: none; }
 nav a:hover { color: var(--accent); }
